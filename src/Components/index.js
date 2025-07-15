@@ -1,4 +1,6 @@
 import React from React;
+import ReactDOM from 'react-dom/client';
+import './index.css';
 
 function index () {
 
