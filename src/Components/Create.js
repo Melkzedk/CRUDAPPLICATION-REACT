@@ -11,14 +11,22 @@ const Create = ({ onCreate }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
-      <input
-        type="text"
-        placeholder="Enter name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <button type="submit">Add</button>
+    <form
+      onSubmit={handleSubmit}
+      className="mb-3 p-3 border rounded shadow-sm bg-light"
+    >
+      <div className="input-group">
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Enter name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <button className="btn btn-primary" type="submit">
+          Add
+        </button>
+      </div>
     </form>
   );
 };
