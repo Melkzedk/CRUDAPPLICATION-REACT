@@ -19,7 +19,9 @@ const CrudApp = () => {
 
   // UPDATE
   const handleUpdate = (updatedItem) => {
-    setData(data.map((item) => (item.id === updatedItem.id ? updatedItem : item)));
+    setData(
+      data.map((item) => (item.id === updatedItem.id ? updatedItem : item))
+    );
     setEditItem(null);
   };
 
